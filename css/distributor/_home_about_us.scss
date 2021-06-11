@@ -1,0 +1,135 @@
+.about_back{
+    &.replica{
+        background-color: #f7f7f7;
+    }
+    &.studentinner{
+        .image_avator{
+            padding-left: 0;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    h3{
+        color: #363636; font-size: 1.9rem; font-style: italic; font-weight: 500; margin-top: 3.8rem;
+    }
+    .list{
+        width: 100%; margin: 3rem 0; float: left;
+      }
+    .list li{
+        width: 50%; float: left; padding-left: 3.6rem; color: #181818; font-size: 1.6rem; margin-bottom: 1rem; background-image: url(../images/check.png); background-repeat: no-repeat; background-position: left center;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    width: 100%; height: auto; padding: 2.6rem 0 9.6rem; float: left;
+    .image_avator{
+        width: 100%; padding-left: 0; position: relative; z-index: 1;
+        
+        img{
+            width: 100%; height: 58rem; object-fit: cover; clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%, 30% 80%, 0% 80%, 0% 20%, 30% 20%);
+        }
+    } 
+    .content_back{
+        width: 100%; position: relative; padding-left: 4rem; z-index: 1;
+        
+        p{
+            margin-bottom: 3.5rem; font-size: 1.5rem;
+        }
+        
+    } 
+}
+
+.fun_facts{
+    width: 100%; height: auto; float: left; padding: 9.6rem 0 6.6rem; background-image: url(../images/white_overlay.jpg);
+    .list{
+        width: 100%; margin-top: 4rem; float: left;
+        li{
+            width: 100%; padding-left: 0; margin-bottom: 2rem;
+        }
+    }
+    .step{
+        width: 100%;
+        li{
+            width: 100%; margin-bottom: 2rem; padding-left: 0;
+            a{
+                color: #ee8c1c; text-decoration: underline;
+            }
+        }
+    }
+    .image_back{
+        width: 100%; float: left;
+        img{
+            width: 100%; background-color: #fff; box-shadow: rgba(0,0,0,.1) 0 1rem 1rem; padding: 1.5rem;
+        }
+    }
+
+}
+.cover{
+    position: sticky; top: 2rem;
+}
+
+.what_we_do{
+    .custom_heading{
+        h2{
+            font-size: 4rem; line-height: 5.2rem;
+        }
+    }
+}
+
+@media only screen and (max-width:820px){
+    .about_back{ 
+        padding: 5rem 0;
+        .image_avator{
+            margin-bottom: 7rem;
+            img{
+                clip-path: inherit;
+            }
+        }
+        .content_back{
+            &:after{
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width:640px){
+    .about_back{
+        &.replica{
+            text-align: center;
+        }
+        .content_back{
+            padding-left: 0;
+        }
+    }
+    .fun_facts{
+        text-align: center;
+        .custom_heading{
+            text-align: center;
+        }
+        .step{
+            text-align: center;
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    .about_back{ 
+        .content_back{
+            text-align: center;
+            h4{
+                display: inline-block;
+            }
+            .custom_heading{
+                span{
+                    right: 0; margin: auto;
+                }
+            }
+            .list{
+                width: 100%;
+                li{
+                    padding: 0; background-image: none; width: 100%;
+                }
+            }
+        }
+    }
+}

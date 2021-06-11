@@ -1,0 +1,130 @@
+footer{
+    width: 100%; float: left;
+    .footer_details{
+        width: 100%; float: left;  background-image: url(../images/ft_bg.png); background-size: cover; background-repeat: no-repeat;
+        .list{
+            &:last-child{
+                .portion{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+            &:nth-child(2){
+                .portion{
+                    padding-left: 2rem;
+                }
+            }
+            &:nth-child(3){
+                .portion{
+                    padding-left: 2rem;
+                }
+            }
+        }
+        .portion{
+            width: 100%; position: relative; padding: 8rem 0 4rem 0; min-height: 40.1rem;
+            
+            &::after{
+                width: 1px; height: 100%; background-color: #1d598d; position: absolute; top: 0; right: 0; content: "";
+            }
+            h2{
+                color: #fff; font-weight: 600; font-size: 1.7rem; margin-bottom: 3rem; font-style: normal;
+            }
+            p{
+                color: #fff; font-size: 1.3rem; line-height: 2.6rem; font-weight: 300; width: 77%;
+            }
+            .social{
+                width: 100%; margin-top: 3rem;
+                li{
+                    display: inline-block; margin-right: 8px;
+                    a{
+                        width: 3.3rem; height: 3.3rem; border-radius: 100%; border: #fff 2px solid; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.5rem;
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+            .ft_menu{
+                width: 100%;
+                li{
+                    width: 100%; padding-left: 2.5rem; position: relative; margin-bottom: 1rem;
+                    a{
+                        color: #fff; font-size: 1.4rem;
+                    }
+                    &::before{
+                        width: 5px; height: 5px; background-color: #39a8f7; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; content: "";
+                    }
+                }
+            }
+            .contact_menu{
+                width: 100%;
+                li{
+                    width: 100%; padding-left: 2.5rem; position: relative; color: #fff; font-size: 1.4rem; margin-bottom: 1.5rem;
+                    a{
+                        color: #fff; 
+                    }
+                    span{
+                        font-size: 1.5rem; color: #39a8f7; position: absolute; top: 6px;  left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        width: 100%; padding: 2rem 0; background-color: #fff; float: left;
+        p{
+            float: left; color: #282828; font-size: 1.4rem;
+        }
+        ul{
+            float: right;
+            li{
+                float: left;
+                margin-right: 20px; color: #282828; font-size: 1.4rem;
+                &:last-child{
+                    margin-right: 0;
+                    a{
+                        padding-right: 0;
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+                a{ 
+                    padding-right: 20px; color: #282828; font-size: 1.4rem; position: relative;
+                    &:after{
+                        width: 1px; height: 2.4rem; background-color: #282828; position: absolute; top: 0; bottom: 0; right: 0; content: "";
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:820px){
+    footer {
+        .footer_details {
+            padding-bottom: 4rem;
+            .portion{
+                padding-bottom: 0; min-height: 1px;
+                &:after{
+                    display: none;
+                }
+            }
+        }
+        .copyright{
+            text-align: center;
+            p{
+                width: 100%;
+            }
+            ul{
+                width: 100%;
+                li{
+                    float: none; display: inline-block;
+                }
+            }
+        }
+    }
+    
+}

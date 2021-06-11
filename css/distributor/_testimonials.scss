@@ -1,0 +1,22 @@
+.testimonial_back{
+    width: 100%; text-align: center; padding: 8rem 0 4rem; background-color: #f3f3f9; float: left;
+    .main_details{
+        width: 100%; margin-top: 7.5rem;
+        .owl-carousel .owl-stage{
+            padding: 3rem 0;
+        }
+        .owl-item{
+            &.center{
+                .portion{
+                    box-shadow: rgba(198,198,198,.75) 0 0 14px;
+                }
+            }
+        }
+        .portion{
+            height: 14rem; width: 100%;  display: flex; align-items: center; justify-content: center;          
+            img{
+                width: auto; height: auto;
+            }
+        }
+    }
+}
